@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/brython@3.13.0/brython.min.js">
+    </script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/brython@3.13.0/brython_stdlib.js">
+    </script>
+</head>
+
+<body>
+
+<script type="text/python">
+t1 = "Undertale is a role-playing game (RPG)  that came out for the first time on pc in 2015 after it was cross-platformed on playstation, switch and xbox. The creator of this masterpiece is Toby fox; and the fun fact with him is that at the beginning, he was a beginner in video game development when he made this game. He was actually a composer. So this is why undertale is popular for the soundtrack ! Toby imagines a universe with a thematic he wants to illustrate and create. With the demos he publishes, a lot of people encourage the developer to continu, to see this game see the light."
+
+t2="At the beginning of the game, we have an intro that explains the context. A long time ago, humans and monsters lived together, but one day, a war broke out and the monsters lost against the humans. Monsters have been locked up in the underground. In the game, we play a character named Frisk, a young child who falls into the underground where monsters live. Here our adventure begins ! The gameplay is really special because you, the player, have choices to make, like kill or not kill monsters, and it will really change the world around our hero, and mentally us actually ! Why ? because there's your timeline. And you have the choice of making the run pacifique where nobody is dead and you choose to spare everyone; The neutral run where some monsters are dead but not all of them, or the more affected one, the run Genocide were nobody makes it. Before we talk about the tactical of fight, let's see how it look !"
+
+from browser import document, html
+
+document <= html.H2(html.I("Undertale un jeu spéciale")) + " page steam pour l'acheter : " + html.A(" Undertale on steam", href="https://store.steampowered.com/app/391540/Undertale/?l=french")
+document <= html.H3("Voici une présentation du jeu Undertale rien que pour vous !")
+document <= t1
+document <= html.H3("")
+#document <= " page steam pour l'acheter : " + html.A(" Undertale on steam", href="https://store.steampowered.com/app/391540/Undertale/?l=french")
+document <= t2
+
+
+
+print("here !")
+</script>
+
+<style>
+*{
+    font-family: sans-serif
+    font-weight: normal;
+    font-size: 1.1em;
+}
+td{
+    background-color: #ccc;
+    padding: 10px 30px 10px 30px;
+    border-radius: 0.2em;
+    text-align: center;
+    cursor: default;
+}
+#result{
+    border-color: #000;
+    border-width: 1px;
+    border-style: solid;
+    padding: 10px 30px 10px 30px;
+    text-align: right;
+}
+</style>
+
+
+</body>
+
+</html>
