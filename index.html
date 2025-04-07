@@ -17,22 +17,43 @@ t1 = "Undertale is a role-playing game (RPG)  that came out for the first time o
 
 t2="At the beginning of the game, we have an intro that explains the context. A long time ago, humans and monsters lived together, but one day, a war broke out and the monsters lost against the humans. Monsters have been locked up in the underground. In the game, we play a character named Frisk, a young child who falls into the underground where monsters live. Here our adventure begins ! The gameplay is really special because you, the player, have choices to make, like kill or not kill monsters, and it will really change the world around our hero, and mentally us actually ! Why ? because there's your timeline. And you have the choice of making the run pacifique where nobody is dead and you choose to spare everyone; The neutral run where some monsters are dead but not all of them, or the more affected one, the run Genocide were nobody makes it. Before we talk about the tactical of fight, let's see how it look !"
 
-t3 = "So here its how the game look, Toby fox with his inspiration, made this game with the design of with pixel art in 2d and good decorations for each place in the game. He make this choice because, remember he wasn't strong for a developer of video game.  He said “The character of frisk doesn't say much because you can better identify with him, more details and personality i add to you, more difficult it is to immerse myself yourself in the role” So this is why we don't know if frisk is a guy or a girl. We have here 2 skeletons, the one how’s name is Papyrus, he want to integrate the royal garde but he is too kind and he like spaghetti. The other one is the smallest and he's name is Comic Sans or Sans the skeleton; he is lazy, like to drink ketchup and make pun every time ton annoyed he's brother and because it's funny. He is the most popular character for his behavior.Next we have Undyne, she make a part of the royal garde and she is a good friend of Papyrus. She strong and courageous she like challenge but be careful and don't make her mad Next we have Mettaton, a bot made by the doctor alphys; He like to make contentfor the spectator of the underground, he like to dance and he is a quit haughty and and much arrogant. We have here Toriel, a goat that act like a mother, and help us when frisk fall in the underground. She considered every child like her own. So she’s like the guid to introduce us in the game. We have the doctor alphys, she is like a dinosaur and she is the scientific of the underground who create mettaton and help the king asgor with experiences… And finally the king named asgor and he's like toriel, a goat and his mission it's to find a way to get out of the underground see the surface again."
+t3 = "So here its how the game look, Toby fox with his inspiration, made this game with the design of with pixel art in 2d and good decorations for each place in the game. He make this choice because, remember he wasn't strong for a developer of video game."
 
 t4 = " All begin with a question, “ Why are we killing monsters in our favorite game ?” Because  we are rewarded with experience, trophies, equipment; it pushes us to continue. That frustrates Toby Fox who would want an rpg where nobody should be injured, where we encourage dialogue, negotiation rather than murder. It will therefore be based on its vision of things to make it the heart of its history. Deciding whether to spare or fight the monsters has real consequences on our relationships with the characters and the world around us. 'I THINK IT’S IMPORTANT TO MAKE EACH MONSTER FEEL LIKE A FULL-FLEDGED INDIVIDUAL IF YOU THINK ABOUT IT, ALL MONSTERS IN RPG ARE THE SAME THEY ATTACK YOU, YOU HEAL YOURSELF, YOU ATTACK THEM, THEY DIE'. It doesn’t make sense. Therefore, Undertale will push the idea by making empathy and understanding the heart of his gameplay.By the desire to have fun, the player wants to kill everybody; toby fox knows it so it for this reason those characters are so endearing. When you want to kill a monster, you alway hesitate before the act, not because they are difficult to fight but because we love them, we have learned to know them and they are not just monsters but  also people with their dear, their anxiety and their dream; we are endearing."
 
 from browser import document, html
 
-document <= html.H1(html.I("Undertale a special game")) + " page steam pour l'acheter : " + html.A(" Undertale on steam", href="https://store.steampowered.com/app/391540/Undertale/?l=french")
-document <= html.H3("Voici une présentation du jeu Undertale rien que pour vous !")
+document <= html.H1(html.I("Undertale a special game")) + " Page steam to buy it : " + html.A(" Undertale on steam", href="https://store.steampowered.com/app/391540/Undertale/?l=french")
+document <= html.H3("Here is a presentation of the game Undertale just for you !")
 document <= t1 + html.BR()*2
-#document <= " page steam pour l'acheter : "" Undertale on steam", href="https://store.steampowered.com/app/391540/Undertale/?l=french")
 document <= html.H2("II) What is undertale ?")
 document <= t2 + html.BR()*2
 document <= t3 + html.BR()*2
+document <= html.IMG(src="ruine.png", alt= "logo HTML5", width="500px")
+document <= html.IMG(src="snow.png", alt= "logo HTML5", width="500px")
+document <= html.IMG(src="hot.png", alt= "logo HTML5", width="500px")
+document <= html.IMG(src="core.png", alt= "logo HTML5", width="500px")
+document <= html.IMG(src="juge.png", alt= "logo HTML5", width="500px")
+document <= html.IMG(src="king.png", alt= "logo HTML5", width="500px")+ html.BR()*2
+document <= html.H2(html.I("Mouse over the character to see his description"))+ html.BR()
 document <= html.IMG(src="perso.jpeg", alt= "logo HTML5", width="1000px") +html.BR()*2+ html.H1("III) Toby fox’s goal:") 
 document <= t4 + html.BR()*2
-#(50, 20, 190,220)
+
+def text(txt):
+
+  coords = [
+  (50, 20, 200,225),#frisk
+  (230,20,415,245), #sans
+  (415,0,615,275), #papyrus
+  (600,0,750,240), #undyne
+  (15,225,245,255), #mettaton
+  (255,245,420,460),#toriel
+  (435,265,565,455), #alphys
+  (585,215,775,450), #asgor
+]
+
+  messages = [ "It's you ! The character of frisk doesn't say much because you can better identify with him, more details and personality is add to you, more difficult it is to immerse yourself in the role. We don't know if frisk is a guy or a girl.","Comic Sans or Sans the skeleton; he is lazy, like to drink ketchup and make pun every time to annoyed he's brother, Papyrus, because it's funny. He is the most popular character for his behavior.", "Papyrus, he want to integrate the royal garde but he is too kind and he like spaghetti.","Undyne, she make a part of the royal garde and she is a good friend of Papyrus. She strong and courageous she like challenge but be careful and don't make her mad ","Mettaton, a bot made by the doctor alphys; He like to make contentfor the spectator of the underground, he like to dance and he is a quit haughty and and much arrogant.","Toriel, a goat that act like a mother, and help us when frisk fall in the underground. She considered every child like her own. So she’s like the guid to introduce us in the game.","doctor alphys, she is like a dinosaur and she is the scientific of the underground who create mettaton and help the king asgor with experiences… ","the king named asgor and he's like toriel, a goat and his mission it's to find a way to get out of the underground see the surface again."]
+            
 
 print("here !")
 </script>
